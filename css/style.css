@@ -1,12 +1,19 @@
 :root {
   --large-default-padding: 6.5em;
   --medium-default-padding: 4em;
+  --primary-color: #555;
+  --secundary-color: #efe9e9;
 }
 
 body {
-  font-family: "Roboto", arial, sans-serif;
+  font-family: "Roboto", arial, tahoma, sans-serif;
   font-weight: 400;
-  font-style: normal;
+  /* font-style: normal; */
+}
+
+h1 {
+  font-family: "Belleza", cursive;
+  font-weight: normal;
 }
 
 #base {
@@ -22,7 +29,8 @@ body {
 
 .top-header__title {
   margin: 0.5em 0 0.5em 8.4125em;
-  color: rgb(239, 233, 233);
+  margin: auto;
+  color: var(--secundary-color);
 }
 
 .top-header__services li {
@@ -40,6 +48,69 @@ body {
   letter-spacing: 0.16em;
 }
 
+.image-top img {
+  width: 100%;
+}
+
 .top-header__services a:hover {
-  color: rgb(239, 233, 233);
+  color: var(--secundary-color);
+}
+
+.container-portifolio {
+  text-align: center;
+  padding: var(--large-default-padding) var(--medium-default-padding);
+}
+
+.container-portifolio h1 {
+  font-size: 2.45em;
+  color: var(--primary-color);
+}
+
+.container-portifolio p {
+  color: var(--primary-color);
+  font-family: "Italiana", cursive;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  line-height: 1.8em;
+}
+
+.container-gallery {
+  color: var(--primary-color);
+  padding: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-gallery__card {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-gallery__card img {
+  border-radius: 8%;
+}
+
+.container-gallery_card_title {
+  font-weight: bold;
+}
+
+.container-about {
+  background-color: #003d52;
+  padding: var(--large-default-padding);
+  color: var(--secundary-color);
+  background-image: url(/images/bg_detalhe.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.container-about h2 {
+  font-family: "Federo", cursive;
+  font-size: 2em;
+}
+
+.container-rights {
+  background-color: #162028;
+  height: 3em;
+  text-align: center;
+  padding: 1em;
 }
